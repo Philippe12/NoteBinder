@@ -27,6 +27,14 @@
 		26624D77180FCB98008E5F73 /* Binder512.png in Resources */ = {isa = PBXBuildFile; fileRef = 26624D73180FCB98008E5F73 /* Binder512.png */; };
 		26624D7A180FCC82008E5F73 /* Binder64.png in Resources */ = {isa = PBXBuildFile; fileRef = 26624D78180FCC82008E5F73 /* Binder64.png */; };
 		26624D7D180FCD62008E5F73 /* Binder1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 26624D7C180FCD62008E5F73 /* Binder1024.png */; };
+		266EB95E1816616F005AEEED /* Binder.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB95D1816616F005AEEED /* Binder.m */; };
+		266EB9611816616F005AEEED /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB9601816616F005AEEED /* Media.m */; };
+		266EB9641816616F005AEEED /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB9631816616F005AEEED /* Meeting.m */; };
+		266EB9671816616F005AEEED /* PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB9661816616F005AEEED /* PDF.m */; };
+		266EB96A1816616F005AEEED /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB9691816616F005AEEED /* Photo.m */; };
+		266EB96D1816616F005AEEED /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB96C1816616F005AEEED /* Document.m */; };
+		266EB9701816616F005AEEED /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB96F1816616F005AEEED /* Note.m */; };
+		266EB97318166170005AEEED /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB97218166170005AEEED /* People.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +76,22 @@
 		26624D73180FCB98008E5F73 /* Binder512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Binder512.png; path = NoteBinder/resources/Binder512.png; sourceTree = "<group>"; };
 		26624D78180FCC82008E5F73 /* Binder64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Binder64.png; path = NoteBinder/resources/Binder64.png; sourceTree = "<group>"; };
 		26624D7C180FCD62008E5F73 /* Binder1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Binder1024.png; path = NoteBinder/resources/Binder1024.png; sourceTree = "<group>"; };
+		266EB95C1816616F005AEEED /* Binder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Binder.h; path = DataBase/Binder.h; sourceTree = "<group>"; };
+		266EB95D1816616F005AEEED /* Binder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Binder.m; path = DataBase/Binder.m; sourceTree = "<group>"; };
+		266EB95F1816616F005AEEED /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Media.h; path = DataBase/Media.h; sourceTree = "<group>"; };
+		266EB9601816616F005AEEED /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Media.m; path = DataBase/Media.m; sourceTree = "<group>"; };
+		266EB9621816616F005AEEED /* Meeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Meeting.h; path = DataBase/Meeting.h; sourceTree = "<group>"; };
+		266EB9631816616F005AEEED /* Meeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Meeting.m; path = DataBase/Meeting.m; sourceTree = "<group>"; };
+		266EB9651816616F005AEEED /* PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDF.h; path = DataBase/PDF.h; sourceTree = "<group>"; };
+		266EB9661816616F005AEEED /* PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDF.m; path = DataBase/PDF.m; sourceTree = "<group>"; };
+		266EB9681816616F005AEEED /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = DataBase/Photo.h; sourceTree = "<group>"; };
+		266EB9691816616F005AEEED /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = DataBase/Photo.m; sourceTree = "<group>"; };
+		266EB96B1816616F005AEEED /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Document.h; path = DataBase/Document.h; sourceTree = "<group>"; };
+		266EB96C1816616F005AEEED /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Document.m; path = DataBase/Document.m; sourceTree = "<group>"; };
+		266EB96E1816616F005AEEED /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = DataBase/Note.h; sourceTree = "<group>"; };
+		266EB96F1816616F005AEEED /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = DataBase/Note.m; sourceTree = "<group>"; };
+		266EB97118166170005AEEED /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = People.h; path = DataBase/People.h; sourceTree = "<group>"; };
+		266EB97218166170005AEEED /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = People.m; path = DataBase/People.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +158,7 @@
 		26624D35180FBD9D008E5F73 /* NoteBinder */ = {
 			isa = PBXGroup;
 			children = (
+				266EB95B181660BF005AEEED /* DataBase */,
 				26624D41180FBD9D008E5F73 /* RADocument.h */,
 				26624D42180FBD9D008E5F73 /* RADocument.m */,
 				26624D44180FBD9D008E5F73 /* RADocument.xib */,
@@ -187,6 +212,29 @@
 				26624D6E180FC9F7008E5F73 /* Binder16.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		266EB95B181660BF005AEEED /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				266EB97118166170005AEEED /* People.h */,
+				266EB97218166170005AEEED /* People.m */,
+				266EB96E1816616F005AEEED /* Note.h */,
+				266EB96F1816616F005AEEED /* Note.m */,
+				266EB96B1816616F005AEEED /* Document.h */,
+				266EB96C1816616F005AEEED /* Document.m */,
+				266EB9681816616F005AEEED /* Photo.h */,
+				266EB9691816616F005AEEED /* Photo.m */,
+				266EB9651816616F005AEEED /* PDF.h */,
+				266EB9661816616F005AEEED /* PDF.m */,
+				266EB9621816616F005AEEED /* Meeting.h */,
+				266EB9631816616F005AEEED /* Meeting.m */,
+				266EB95F1816616F005AEEED /* Media.h */,
+				266EB9601816616F005AEEED /* Media.m */,
+				266EB95C1816616F005AEEED /* Binder.h */,
+				266EB95D1816616F005AEEED /* Binder.m */,
+			);
+			name = DataBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,9 +344,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				266EB96D1816616F005AEEED /* Document.m in Sources */,
 				26624D3C180FBD9D008E5F73 /* main.m in Sources */,
+				266EB9671816616F005AEEED /* PDF.m in Sources */,
+				266EB9641816616F005AEEED /* Meeting.m in Sources */,
+				266EB9611816616F005AEEED /* Media.m in Sources */,
+				266EB97318166170005AEEED /* People.m in Sources */,
+				266EB9701816616F005AEEED /* Note.m in Sources */,
+				266EB96A1816616F005AEEED /* Photo.m in Sources */,
 				26624D43180FBD9D008E5F73 /* RADocument.m in Sources */,
 				26624D4C180FBD9D008E5F73 /* RADocument.xcdatamodeld in Sources */,
+				266EB95E1816616F005AEEED /* Binder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +573,7 @@
 				26624D65180FBD9D008E5F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26624D66180FBD9D008E5F73 /* Build configuration list for PBXNativeTarget "NoteBinderTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +582,7 @@
 				26624D68180FBD9D008E5F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

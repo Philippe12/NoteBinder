@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="untitled.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F45" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Binder" representedClassName="Binder" syncable="YES">
+        <attribute name="information" optional="YES" attributeType="String" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <relationship name="documents" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Document" inverseName="binder" inverseEntity="Document" storedInTruthFile="YES" syncable="YES"/>
+    </entity>
+    <entity name="Document" representedClassName="Document" isAbstract="YES" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" storedInTruthFile="YES" syncable="YES"/>
+        <relationship name="binder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Binder" inverseName="documents" inverseEntity="Binder" storedInTruthFile="YES" syncable="YES"/>
+    </entity>
+    <entity name="Media" representedClassName="Media" isAbstract="YES" parentEntity="Document" syncable="YES">
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="medias" inverseEntity="Note" storedInTruthFile="YES" syncable="YES"/>
+    </entity>
+    <entity name="Meeting" representedClassName="Meeting" parentEntity="Note" syncable="YES">
+        <relationship name="peoples" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="People" inverseName="meetings" inverseEntity="People" storedInTruthFile="YES" syncable="YES"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" parentEntity="Document" syncable="YES">
+        <attribute name="texte" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+        <relationship name="medias" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Media" inverseName="notes" inverseEntity="Media" storedInTruthFile="YES" syncable="YES"/>
+    </entity>
+    <entity name="PDF" representedClassName="PDF" parentEntity="Media" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Date" storedInTruthFile="YES" syncable="YES"/>
+    </entity>
+    <entity name="People" representedClassName="People" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" storedInTruthFile="YES" syncable="YES"/>
+        <relationship name="meetings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meeting" inverseName="peoples" inverseEntity="Meeting" storedInTruthFile="YES" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" parentEntity="Media" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Binder" positionX="-7236" positionY="-8874" width="128" height="103"/>
+        <element name="Note" positionX="-7092" positionY="-8613" width="128" height="73"/>
+        <element name="Meeting" positionX="-7175" positionY="-8467" width="128" height="58"/>
+        <element name="Document" positionX="-7002" positionY="-8800" width="128" height="88"/>
+        <element name="Photo" positionX="-6941" positionY="-8473" width="128" height="58"/>
+        <element name="PDF" positionX="-6770" positionY="-8473" width="128" height="58"/>
+        <element name="People" positionX="-7389" positionY="-8523" width="128" height="73"/>
+        <element name="Media" positionX="-6867" positionY="-8617" width="128" height="58"/>
+    </elements>
 </model>
