@@ -35,6 +35,7 @@
 		266EB96D1816616F005AEEED /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB96C1816616F005AEEED /* Document.m */; };
 		266EB9701816616F005AEEED /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB96F1816616F005AEEED /* Note.m */; };
 		266EB97318166170005AEEED /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB97218166170005AEEED /* People.m */; };
+		26D9CB041817D9020056DE02 /* RAButtonPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9CB031817D9020056DE02 /* RAButtonPopMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		266EB96F1816616F005AEEED /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = DataBase/Note.m; sourceTree = "<group>"; };
 		266EB97118166170005AEEED /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = People.h; path = DataBase/People.h; sourceTree = "<group>"; };
 		266EB97218166170005AEEED /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = People.m; path = DataBase/People.m; sourceTree = "<group>"; };
+		26D9CB021817D9020056DE02 /* RAButtonPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAButtonPopMenu.h; path = CustomClass/RAButtonPopMenu.h; sourceTree = "<group>"; };
+		26D9CB031817D9020056DE02 /* RAButtonPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAButtonPopMenu.m; path = CustomClass/RAButtonPopMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,7 @@
 		26624D35180FBD9D008E5F73 /* NoteBinder */ = {
 			isa = PBXGroup;
 			children = (
+				26D9CB011817D8B30056DE02 /* CustomClass */,
 				266EB95B181660BF005AEEED /* DataBase */,
 				26624D41180FBD9D008E5F73 /* RADocument.h */,
 				26624D42180FBD9D008E5F73 /* RADocument.m */,
@@ -235,6 +239,15 @@
 				266EB95D1816616F005AEEED /* Binder.m */,
 			);
 			name = DataBase;
+			sourceTree = "<group>";
+		};
+		26D9CB011817D8B30056DE02 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				26D9CB021817D9020056DE02 /* RAButtonPopMenu.h */,
+				26D9CB031817D9020056DE02 /* RAButtonPopMenu.m */,
+			);
+			name = CustomClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +364,7 @@
 				266EB9611816616F005AEEED /* Media.m in Sources */,
 				266EB97318166170005AEEED /* People.m in Sources */,
 				266EB9701816616F005AEEED /* Note.m in Sources */,
+				26D9CB041817D9020056DE02 /* RAButtonPopMenu.m in Sources */,
 				266EB96A1816616F005AEEED /* Photo.m in Sources */,
 				26624D43180FBD9D008E5F73 /* RADocument.m in Sources */,
 				26624D4C180FBD9D008E5F73 /* RADocument.xcdatamodeld in Sources */,
