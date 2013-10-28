@@ -2,7 +2,7 @@
 //  Document.h
 //  NoteBinder
 //
-//  Created by Philippe Fouquet on 22/10/13.
+//  Created by Philippe Fouquet on 23/10/13.
 //  Copyright (c) 2013 Philippe Fouquet. All rights reserved.
 //
 
@@ -13,8 +13,8 @@
 
 @interface Document : NSManagedObject
 
-@property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSDate * date;
+@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) Binder *binder;
 
 @end
