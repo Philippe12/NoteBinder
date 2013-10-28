@@ -28,6 +28,8 @@
 		26624D7A180FCC82008E5F73 /* Binder64.png in Resources */ = {isa = PBXBuildFile; fileRef = 26624D78180FCC82008E5F73 /* Binder64.png */; };
 		26624D7D180FCD62008E5F73 /* Binder1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 26624D7C180FCD62008E5F73 /* Binder1024.png */; };
 		2664E587181D0BD600412048 /* RACustomSideBare.m in Sources */ = {isa = PBXBuildFile; fileRef = 2664E586181D0BD600412048 /* RACustomSideBare.m */; };
+		266A3C43181EA477008816E2 /* RAPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266A3C41181EA477008816E2 /* RAPanelController.m */; };
+		266A3C44181EA477008816E2 /* RAPanelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266A3C42181EA477008816E2 /* RAPanelController.xib */; };
 		266EB95E1816616F005AEEED /* Binder.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB95D1816616F005AEEED /* Binder.m */; };
 		266EB9611816616F005AEEED /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB9601816616F005AEEED /* Media.m */; };
 		266EB9641816616F005AEEED /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB9631816616F005AEEED /* Meeting.m */; };
@@ -80,6 +82,9 @@
 		26624D7C180FCD62008E5F73 /* Binder1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Binder1024.png; path = NoteBinder/resources/Binder1024.png; sourceTree = "<group>"; };
 		2664E585181D0BD600412048 /* RACustomSideBare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RACustomSideBare.h; path = CustomClass/RACustomSideBare.h; sourceTree = "<group>"; };
 		2664E586181D0BD600412048 /* RACustomSideBare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RACustomSideBare.m; path = CustomClass/RACustomSideBare.m; sourceTree = "<group>"; };
+		266A3C40181EA477008816E2 /* RAPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAPanelController.h; path = Panel/RAPanelController.h; sourceTree = "<group>"; };
+		266A3C41181EA477008816E2 /* RAPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAPanelController.m; path = Panel/RAPanelController.m; sourceTree = "<group>"; };
+		266A3C42181EA477008816E2 /* RAPanelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAPanelController.xib; path = Panel/RAPanelController.xib; sourceTree = "<group>"; };
 		266EB95C1816616F005AEEED /* Binder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Binder.h; path = DataBase/Binder.h; sourceTree = "<group>"; };
 		266EB95D1816616F005AEEED /* Binder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Binder.m; path = DataBase/Binder.m; sourceTree = "<group>"; };
 		266EB95F1816616F005AEEED /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Media.h; path = DataBase/Media.h; sourceTree = "<group>"; };
@@ -164,6 +169,7 @@
 		26624D35180FBD9D008E5F73 /* NoteBinder */ = {
 			isa = PBXGroup;
 			children = (
+				266A3C3F181EA457008816E2 /* Panel */,
 				26D9CB011817D8B30056DE02 /* CustomClass */,
 				266EB95B181660BF005AEEED /* DataBase */,
 				26624D41180FBD9D008E5F73 /* RADocument.h */,
@@ -219,6 +225,16 @@
 				26624D6E180FC9F7008E5F73 /* Binder16.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		266A3C3F181EA457008816E2 /* Panel */ = {
+			isa = PBXGroup;
+			children = (
+				266A3C40181EA477008816E2 /* RAPanelController.h */,
+				266A3C41181EA477008816E2 /* RAPanelController.m */,
+				266A3C42181EA477008816E2 /* RAPanelController.xib */,
+			);
+			name = Panel;
 			sourceTree = "<group>";
 		};
 		266EB95B181660BF005AEEED /* DataBase */ = {
@@ -343,6 +359,7 @@
 				26624D40180FBD9D008E5F73 /* Credits.rtf in Resources */,
 				26624D49180FBD9D008E5F73 /* MainMenu.xib in Resources */,
 				26624D7A180FCC82008E5F73 /* Binder64.png in Resources */,
+				266A3C44181EA477008816E2 /* RAPanelController.xib in Resources */,
 				26624D75180FCB98008E5F73 /* Binder128.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +382,7 @@
 				267497E7181821DE00F04FE4 /* Document.m in Sources */,
 				26624D3C180FBD9D008E5F73 /* main.m in Sources */,
 				266EB9671816616F005AEEED /* PDF.m in Sources */,
+				266A3C43181EA477008816E2 /* RAPanelController.m in Sources */,
 				266EB9641816616F005AEEED /* Meeting.m in Sources */,
 				266EB9611816616F005AEEED /* Media.m in Sources */,
 				2664E587181D0BD600412048 /* RACustomSideBare.m in Sources */,
