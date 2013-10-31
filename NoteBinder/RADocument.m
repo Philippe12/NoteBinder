@@ -9,6 +9,9 @@
 #import "RADocument.h"
 #import "Binder.h"
 #import "People.h"
+#import "RACustomSideBare.h"
+#import "RAPanelController.h"
+#import "RAConfigBinder.h"
 
 @implementation RADocument
 
@@ -56,6 +59,12 @@
     [ptr prepareContent];
     [parentArray setObject:ptr forKey:@"People"];
     
+    [_sidebarOutlineView setFloatsGroupRows:NO];
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:10];
+    [_sidebarOutlineView expandItem:nil expandChildren:NO];
+    [NSAnimationContext endGrouping];
+    [_sidebarOutlineView setDoubleAction:@selector(doubleClickInTableView:)];
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)index
@@ -87,59 +96,22 @@
     if([outlineView parentForItem:item] == nil)
     {
         NSTextField *result = [outlineView makeViewWithIdentifier:@"HeaderTextField" owner:self];
-        // Uppercase the string value, but don't set anything else. NSOutlineView automatically applies attributes as necessary
-        //NSString *value = [item uppercaseString];
         [result setStringValue:item];
+        [result setMenu:nil];
         return result;
-        //return item;
     }
     else
     {
-        // The cell is setup in IB. The textField and imageView outlets are properly setup.
-        // Special attributes are automatically applied by NSTableView/NSOutlineView for the source list
-        NSTableCellView *result = [outlineView makeViewWithIdentifier:@"MainCell" owner:self];
+        RACustomSideBare *result = [outlineView makeViewWithIdentifier:@"MainCell" owner:self];
         result.textField.stringValue = [item valueForKey:@"name"];
-        // Setup the icon based on our section
-        /*id parent = [outlineView parentForItem:item];
-        NSInteger index = [_topLevelItems indexOfObject:parent];
-        NSInteger iconOffset = index % 4;
-        switch (iconOffset) {
-            case 0: {
-                result.imageView.image = [NSImage imageNamed:NSImageNameIconViewTemplate];
-                break;
-            }
-            case 1: {
-                result.imageView.image = [NSImage imageNamed:NSImageNameHomeTemplate];
-                break;
-            }
-            case 2: {
-                result.imageView.image = [NSImage imageNamed:NSImageNameQuickLookTemplate];
-                break;
-            }
-            case 3: {
-                result.imageView.image = [NSImage imageNamed:NSImageNameSlideshowTemplate];
-                break;
-            }
-        }
-        BOOL hideUnreadIndicator = YES;
-        // Setup the unread indicator to show in some cases. Layout is done in SidebarTableCellView's viewWillDraw
-        if (index == 0) {
-            // First row in the index
-            hideUnreadIndicator = NO;
-            [result.button setTitle:@"42"];
-            [result.button sizeToFit];
-            // Make it appear as a normal label and not a button
-            [[result.button cell] setHighlightsBy:0];
-        } else if (index == 2) {
-            // Example for a button
-            hideUnreadIndicator = NO;
-            result.button.target = self;
-            result.button.action = @selector(buttonClicked:);
-            [result.button setImage:[NSImage imageNamed:NSImageNameAddTemplate]];
-            // Make it appear as a button
-            [[result.button cell] setHighlightsBy:NSPushInCellMask|NSChangeBackgroundCellMask];
-        }
-        [result.button setHidden:hideUnreadIndicator];*/
+        [result setToolTip:[item valueForKey:@"information"]];
+        
+        NSImage *img = [[NSImage alloc] initWithData:[item valueForKey:@"photo"]];
+        if( img == nil )
+            [result.imageView.image setTemplate:TRUE];
+        else
+            result.imageView.image = img;
+
         return result;
     }
 }
@@ -180,10 +152,30 @@
 
 - (IBAction)Delete:(id)sender {
     id sel = [_sidebarOutlineView itemAtRow:[_sidebarOutlineView selectedRow]];
+    if( sel == nil )
+        return;
     id ptr = [_sidebarOutlineView parentForItem:sel];
     NSArrayController *array = [parentArray objectForKey:ptr];
     [array remove:sel];
     
+    [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
+}
+
+- (IBAction)Configure:(id)sender {
+}
+
+- (IBAction)doubleClickInTableView:(id)sender {
+    id sel = [_sidebarOutlineView itemAtRow:[_sidebarOutlineView selectedRow]];
+    if( sel == nil )
+        return;
+    
+    NSString *str = [NSString stringWithFormat: @"RAConfig%@", [sel className], nil];
+    id wnd = [NSClassFromString(str) alloc];
+    if( wnd == nil )
+        return;
+    wnd = [wnd initWithManagedObjectContext:self.managedObjectContext :self.managedObjectModel :nil];
+    [wnd setBinder:(Binder*)sel];
+    [wnd runAsPanel:self.windowForSheet];
     [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
 }
 

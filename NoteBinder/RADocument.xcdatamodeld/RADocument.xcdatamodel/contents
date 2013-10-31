@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F45" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3400" systemVersion="13A603" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Binder" representedClassName="Binder" syncable="YES">
         <attribute name="information" optional="YES" attributeType="String" storedInTruthFile="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" storedInTruthFile="YES" syncable="YES"/>
@@ -25,7 +25,9 @@
         <attribute name="data" optional="YES" attributeType="Date" storedInTruthFile="YES" syncable="YES"/>
     </entity>
     <entity name="People" representedClassName="People" syncable="YES">
+        <attribute name="information" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
         <relationship name="meetings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Meeting" inverseName="peoples" inverseEntity="Meeting" storedInTruthFile="YES" syncable="YES"/>
     </entity>
     <entity name="Photo" representedClassName="Photo" parentEntity="Media" syncable="YES">
@@ -38,7 +40,7 @@
         <element name="Meeting" positionX="-7175" positionY="-8467" width="128" height="58"/>
         <element name="Note" positionX="-7092" positionY="-8613" width="128" height="73"/>
         <element name="PDF" positionX="-6770" positionY="-8473" width="128" height="58"/>
-        <element name="People" positionX="-7389" positionY="-8523" width="128" height="73"/>
+        <element name="People" positionX="-7389" positionY="-8523" width="128" height="103"/>
         <element name="Photo" positionX="-6941" positionY="-8473" width="128" height="58"/>
     </elements>
 </model>

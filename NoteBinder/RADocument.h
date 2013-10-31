@@ -16,8 +16,12 @@
 @property (strong) IBOutlet NSOutlineView *sidebarOutlineView;
 @property (strong) IBOutlet NSArrayController *PeopleList;
 @property (strong) IBOutlet NSArrayController *BinderList;
+@property (strong) IBOutlet NSMenu *MenuConfigure;
+
 - (IBAction)AddBinder:(id)sender;
 - (IBAction)AddPeople:(id)sender;
 - (IBAction)Delete:(id)sender;
+- (IBAction)Configure:(id)sender;
+- (IBAction)doubleClickInTableView:(id)sender;
 
 @end

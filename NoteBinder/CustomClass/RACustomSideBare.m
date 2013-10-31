@@ -26,4 +26,9 @@
     // Drawing code here.
 }
 
+- (NSMenu*)menuForEvent:(NSEvent *)theEvent
+{
+    return self.menu;
+}
+
 @end
