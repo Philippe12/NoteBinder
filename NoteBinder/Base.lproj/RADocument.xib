@@ -108,7 +108,7 @@
                                                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SuK-FK-swZ">
                                                                             <rect key="frame" x="3" y="3" width="45" height="45"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" image="NSActionTemplate" id="Jw4-Hm-RKp"/>
+                                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" image="NSUser" id="Jw4-Hm-RKp"/>
                                                                         </imageView>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GK6-um-fRI">
                                                                             <rect key="frame" x="54" y="17" width="186" height="17"/>
@@ -225,8 +225,8 @@
         </menu>
     </objects>
     <resources>
-        <image name="NSActionTemplate" width="14" height="14"/>
         <image name="NSAddTemplate" width="8" height="8"/>
         <image name="NSRemoveTemplate" width="8" height="8"/>
+        <image name="NSUser" width="32" height="32"/>
     </resources>
 </document>

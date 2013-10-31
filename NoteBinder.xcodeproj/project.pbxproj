@@ -41,6 +41,9 @@
 		266EB9701816616F005AEEED /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB96F1816616F005AEEED /* Note.m */; };
 		267497E7181821DE00F04FE4 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 267497E6181821DE00F04FE4 /* Document.m */; };
 		268775131822604E002CDFA2 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 268775121822604E002CDFA2 /* People.m */; };
+		2687751718226118002CDFA2 /* RAConfigPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 2687751518226118002CDFA2 /* RAConfigPeople.m */; };
+		2687751818226118002CDFA2 /* RAConfigPeople.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2687751618226118002CDFA2 /* RAConfigPeople.xib */; };
+		2687751A1822651F002CDFA2 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268775191822651F002CDFA2 /* AddressBook.framework */; };
 		26D9CB041817D9020056DE02 /* RAButtonPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9CB031817D9020056DE02 /* RAButtonPopMenu.m */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +112,10 @@
 		267497E6181821DE00F04FE4 /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Document.m; path = DataBase/Document.m; sourceTree = "<group>"; };
 		268775111822604E002CDFA2 /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = People.h; path = DataBase/People.h; sourceTree = "<group>"; };
 		268775121822604E002CDFA2 /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = People.m; path = DataBase/People.m; sourceTree = "<group>"; };
+		2687751418226118002CDFA2 /* RAConfigPeople.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAConfigPeople.h; path = Panel/RAConfigPeople.h; sourceTree = "<group>"; };
+		2687751518226118002CDFA2 /* RAConfigPeople.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAConfigPeople.m; path = Panel/RAConfigPeople.m; sourceTree = "<group>"; };
+		2687751618226118002CDFA2 /* RAConfigPeople.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAConfigPeople.xib; path = Panel/RAConfigPeople.xib; sourceTree = "<group>"; };
+		268775191822651F002CDFA2 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		26D9CB021817D9020056DE02 /* RAButtonPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAButtonPopMenu.h; path = CustomClass/RAButtonPopMenu.h; sourceTree = "<group>"; };
 		26D9CB031817D9020056DE02 /* RAButtonPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAButtonPopMenu.m; path = CustomClass/RAButtonPopMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2687751A1822651F002CDFA2 /* AddressBook.framework in Frameworks */,
 				26624D30180FBD9D008E5F73 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +165,7 @@
 		26624D2E180FBD9D008E5F73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				268775191822651F002CDFA2 /* AddressBook.framework */,
 				26624D2F180FBD9D008E5F73 /* Cocoa.framework */,
 				26624D54180FBD9D008E5F73 /* XCTest.framework */,
 				26624D31180FBD9D008E5F73 /* Other Frameworks */,
@@ -244,6 +253,9 @@
 				266A3C45181EA511008816E2 /* RAConfigBinder.h */,
 				266A3C46181EA511008816E2 /* RAConfigBinder.m */,
 				266A3C47181EA511008816E2 /* RAConfigBinder.xib */,
+				2687751418226118002CDFA2 /* RAConfigPeople.h */,
+				2687751518226118002CDFA2 /* RAConfigPeople.m */,
+				2687751618226118002CDFA2 /* RAConfigPeople.xib */,
 			);
 			name = Panel;
 			sourceTree = "<group>";
@@ -363,6 +375,7 @@
 			files = (
 				26624D76180FCB98008E5F73 /* Binder256.png in Resources */,
 				26624D46180FBD9D008E5F73 /* RADocument.xib in Resources */,
+				2687751818226118002CDFA2 /* RAConfigPeople.xib in Resources */,
 				266A3C49181EA511008816E2 /* RAConfigBinder.xib in Resources */,
 				26624D4E180FBD9D008E5F73 /* Images.xcassets in Resources */,
 				26624D6F180FC9F7008E5F73 /* Binder16.png in Resources */,
@@ -394,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				267497E7181821DE00F04FE4 /* Document.m in Sources */,
+				2687751718226118002CDFA2 /* RAConfigPeople.m in Sources */,
 				26624D3C180FBD9D008E5F73 /* main.m in Sources */,
 				266EB9671816616F005AEEED /* PDF.m in Sources */,
 				266A3C43181EA477008816E2 /* RAPanelController.m in Sources */,
