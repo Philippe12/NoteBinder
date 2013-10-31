@@ -174,7 +174,7 @@
     if( wnd == nil )
         return;
     wnd = [wnd initWithManagedObjectContext:self.managedObjectContext :self.managedObjectModel :nil];
-    [wnd setBinder:(Binder*)sel];
+    [wnd setPresistent:sel];
     [wnd runAsPanel:self.windowForSheet];
     [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
 }

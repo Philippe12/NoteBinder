@@ -36,7 +36,7 @@
 	return self;
 }
 
-- (void)setBinder:(Binder*)val
+- (void)setPresistent:(id)val
 {
     mBinder = val;
 }

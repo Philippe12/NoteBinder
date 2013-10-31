@@ -15,7 +15,7 @@
     Binder *mBinder;
 }
 
-- (void)setBinder:(Binder*)val;
+- (void)setPresistent:(id)val;
 - (IBAction)OpenImage:(id)sender;
 
 @end
