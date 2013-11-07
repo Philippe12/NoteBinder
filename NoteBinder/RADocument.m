@@ -10,6 +10,7 @@
 #import "People.h"
 #import "Note.h"
 #import "Meeting.h"
+#import "Photo.h"
 #import "RACustomSideBare.h"
 #import "RAPanelController.h"
 #import "RAConfigBinder.h"
@@ -141,6 +142,18 @@
 }
 
 - (IBAction)AddPhoto:(id)sender {
+    NSArrayController *ptr = [[NSArrayController alloc] init];
+    [ptr setManagedObjectContext:self.managedObjectContext];
+    [ptr setEntityName:@"Photo"];
+    [ptr prepareContent];
+    
+    Binder *selectbinder = [ self GetBinderSelected];
+    
+    Photo *photo = [ptr newObject];
+    photo.name = @"new photo";
+    [selectbinder addDocumentsObject:photo];
+    
+    [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
 }
 
 - (IBAction)AddPdf:(id)sender {
