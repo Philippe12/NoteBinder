@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RAConfigNote">
+            <connections>
+                <outlet property="OpenPhoto" destination="D08-Zd-2vg" id="nKd-fS-m7l"/>
+                <outlet property="window" destination="1" id="3"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" wantsToBeColor="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="247" height="240"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="247" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nPO-s5-sQV">
+                        <rect key="frame" x="18" y="201" width="49" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name :" id="Wbw-Yr-myJ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8z5-rt-zEw">
+                        <rect key="frame" x="73" y="198" width="154" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="v7v-G2-STS">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="self.mNote.name" id="ChG-eg-CAr"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XEf-jl-4Vr">
+                        <rect key="frame" x="14" y="13" width="219" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kSf-XK-CdH">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="Quite:" target="-2" id="5lf-9X-w0l"/>
+                        </connections>
+                    </button>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qsl-T9-fPV">
+                        <rect key="frame" x="17" y="48" width="213" height="145"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="tkH-B1-moV"/>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="self.mNote.photo" id="94m-kH-LoT">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">RAImageTranformer</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </imageView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="D08-Zd-2vg">
+                        <rect key="frame" x="175" y="60" width="42" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="FSj-gg-fwV"/>
+                            <constraint firstAttribute="width" constant="42" id="Vos-ib-u5n"/>
+                        </constraints>
+                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSFolder" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SIY-5m-1Nc">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="OpenImage:" target="-2" id="oHP-bH-cBd"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="D08-Zd-2vg" secondAttribute="trailing" constant="30" id="0Xu-A6-Jch"/>
+                    <constraint firstItem="nPO-s5-sQV" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="1Jq-KK-P29"/>
+                    <constraint firstItem="8z5-rt-zEw" firstAttribute="trailing" secondItem="qsl-T9-fPV" secondAttribute="trailing" id="3xu-9U-WoF"/>
+                    <constraint firstItem="XEf-jl-4Vr" firstAttribute="top" secondItem="D08-Zd-2vg" secondAttribute="bottom" constant="20" symbolic="YES" id="64h-Xg-Q81"/>
+                    <constraint firstItem="8z5-rt-zEw" firstAttribute="centerY" secondItem="nPO-s5-sQV" secondAttribute="centerY" id="7ED-F9-P1w"/>
+                    <constraint firstItem="qsl-T9-fPV" firstAttribute="leading" secondItem="XEf-jl-4Vr" secondAttribute="leading" id="AaR-Oz-Rhw"/>
+                    <constraint firstItem="XEf-jl-4Vr" firstAttribute="trailing" secondItem="qsl-T9-fPV" secondAttribute="trailing" id="ClK-4q-LxE"/>
+                    <constraint firstItem="qsl-T9-fPV" firstAttribute="leading" secondItem="nPO-s5-sQV" secondAttribute="leading" id="EB2-Dj-eoG"/>
+                    <constraint firstItem="qsl-T9-fPV" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" id="JYE-oy-i5f"/>
+                    <constraint firstItem="qsl-T9-fPV" firstAttribute="top" secondItem="8z5-rt-zEw" secondAttribute="bottom" constant="8" symbolic="YES" id="OvY-W6-JIx"/>
+                    <constraint firstAttribute="trailing" secondItem="8z5-rt-zEw" secondAttribute="trailing" constant="20" symbolic="YES" id="VgR-mC-cgD"/>
+                    <constraint firstItem="8z5-rt-zEw" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" symbolic="YES" id="eJl-HI-Ox5"/>
+                    <constraint firstItem="8z5-rt-zEw" firstAttribute="leading" secondItem="nPO-s5-sQV" secondAttribute="trailing" constant="8" symbolic="YES" id="rkg-Ha-91M"/>
+                    <constraint firstAttribute="bottom" secondItem="XEf-jl-4Vr" secondAttribute="bottom" constant="20" symbolic="YES" id="t2T-xj-peD"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="4"/>
+            </connections>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="dPg-mS-7iD"/>
+    </objects>
+    <resources>
+        <image name="NSFolder" width="32" height="32"/>
+    </resources>
+</document>

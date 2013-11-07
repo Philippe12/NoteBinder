@@ -15,6 +15,8 @@
 		2644C7EE182B7F8500C269EB /* PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644C7ED182B7F8500C269EB /* PDF.m */; };
 		2644C7F1182B7F8500C269EB /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644C7F0182B7F8500C269EB /* People.m */; };
 		2644C7F4182B7F8500C269EB /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644C7F3182B7F8500C269EB /* Note.m */; };
+		2644C7F8182BAEB800C269EB /* RAConfigNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644C7F6182BAEB800C269EB /* RAConfigNote.m */; };
+		2644C7F9182BAEB800C269EB /* RAConfigNote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2644C7F7182BAEB800C269EB /* RAConfigNote.xib */; };
 		26624D30180FBD9D008E5F73 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26624D2F180FBD9D008E5F73 /* Cocoa.framework */; };
 		26624D3A180FBD9D008E5F73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26624D38180FBD9D008E5F73 /* InfoPlist.strings */; };
 		26624D3C180FBD9D008E5F73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26624D3B180FBD9D008E5F73 /* main.m */; };
@@ -74,6 +76,9 @@
 		2644C7F0182B7F8500C269EB /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = People.m; path = DataBase/People.m; sourceTree = "<group>"; };
 		2644C7F2182B7F8500C269EB /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = DataBase/Note.h; sourceTree = "<group>"; };
 		2644C7F3182B7F8500C269EB /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = DataBase/Note.m; sourceTree = "<group>"; };
+		2644C7F5182BAEB800C269EB /* RAConfigNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAConfigNote.h; path = Panel/RAConfigNote.h; sourceTree = "<group>"; };
+		2644C7F6182BAEB800C269EB /* RAConfigNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAConfigNote.m; path = Panel/RAConfigNote.m; sourceTree = "<group>"; };
+		2644C7F7182BAEB800C269EB /* RAConfigNote.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAConfigNote.xib; path = Panel/RAConfigNote.xib; sourceTree = "<group>"; };
 		26624D2C180FBD9D008E5F73 /* NoteBinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteBinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26624D2F180FBD9D008E5F73 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		26624D32180FBD9D008E5F73 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -256,6 +261,9 @@
 				2687751418226118002CDFA2 /* RAConfigPeople.h */,
 				2687751518226118002CDFA2 /* RAConfigPeople.m */,
 				2687751618226118002CDFA2 /* RAConfigPeople.xib */,
+				2644C7F5182BAEB800C269EB /* RAConfigNote.h */,
+				2644C7F6182BAEB800C269EB /* RAConfigNote.m */,
+				2644C7F7182BAEB800C269EB /* RAConfigNote.xib */,
 			);
 			name = Panel;
 			sourceTree = "<group>";
@@ -373,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2644C7F9182BAEB800C269EB /* RAConfigNote.xib in Resources */,
 				26624D76180FCB98008E5F73 /* Binder256.png in Resources */,
 				26624D46180FBD9D008E5F73 /* RADocument.xib in Resources */,
 				2687751818226118002CDFA2 /* RAConfigPeople.xib in Resources */,
@@ -412,6 +421,7 @@
 				266A3C43181EA477008816E2 /* RAPanelController.m in Sources */,
 				2662B6151820179900BEDD62 /* RAImageTranformer.m in Sources */,
 				2644C7F1182B7F8500C269EB /* People.m in Sources */,
+				2644C7F8182BAEB800C269EB /* RAConfigNote.m in Sources */,
 				2644C7E2182B7F8500C269EB /* Document.m in Sources */,
 				2664E587181D0BD600412048 /* RACustomSideBare.m in Sources */,
 				2644C7E8182B7F8500C269EB /* Photo.m in Sources */,
