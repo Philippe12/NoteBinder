@@ -69,18 +69,6 @@
     [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
 }
 
-- (IBAction)Delete:(id)sender {
-    id sel = [_sidebarOutlineView itemAtRow:[_sidebarOutlineView selectedRow]];
-    if( sel == nil )
-        return;
-    id ptr = [_sidebarOutlineView parentForItem:sel];
-//    NSArrayController *array = [parentArray objectForKey:ptr];
-//    [array remove:sel];
-    //[[_TreeBinder arrangedObjects] dictionary]
-    
-    [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
-}
-
 - (IBAction)doubleClickInTableView:(id)sender {
     id sel = [[_sidebarOutlineView itemAtRow:[_sidebarOutlineView selectedRow]] representedObject];
     if( sel == nil )

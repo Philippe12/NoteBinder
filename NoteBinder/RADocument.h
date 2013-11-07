@@ -16,7 +16,6 @@
 @property (strong) IBOutlet NSOutlineView *sidebarOutlineView;
 
 - (IBAction)AddPeople:(id)sender;
-- (IBAction)Delete:(id)sender;
 - (IBAction)doubleClickInTableView:(id)sender;
 
 @end
