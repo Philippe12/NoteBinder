@@ -2,7 +2,7 @@
 //  Document.m
 //  NoteBinder
 //
-//  Created by Philippe Fouquet on 23/10/13.
+//  Created by Philippe Fouquet on 07/11/2013.
 //  Copyright (c) 2013 Philippe Fouquet. All rights reserved.
 //
 
@@ -14,6 +14,7 @@
 
 @dynamic date;
 @dynamic name;
+@dynamic photo;
 @dynamic binder;
 
 @end

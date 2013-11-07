@@ -2,7 +2,7 @@
 //  People.h
 //  NoteBinder
 //
-//  Created by Philippe Fouquet on 31/10/2013.
+//  Created by Philippe Fouquet on 07/11/2013.
 //  Copyright (c) 2013 Philippe Fouquet. All rights reserved.
 //
 
@@ -13,9 +13,9 @@
 
 @interface People : NSManagedObject
 
+@property (nonatomic, retain) NSString * information;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSData * photo;
-@property (nonatomic, retain) NSString * information;
 @property (nonatomic, retain) NSSet *meetings;
 @end
 

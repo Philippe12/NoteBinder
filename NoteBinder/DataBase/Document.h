@@ -2,7 +2,7 @@
 //  Document.h
 //  NoteBinder
 //
-//  Created by Philippe Fouquet on 23/10/13.
+//  Created by Philippe Fouquet on 07/11/2013.
 //  Copyright (c) 2013 Philippe Fouquet. All rights reserved.
 //
 
@@ -15,6 +15,7 @@
 
 @property (nonatomic, retain) NSDate * date;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSData * photo;
 @property (nonatomic, retain) Binder *binder;
 
 @end
