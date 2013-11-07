@@ -154,6 +154,9 @@
 - (Binder*)GetBinderSelected
 {
     id sel = [[_sidebarOutlineView itemAtRow:[_sidebarOutlineView selectedRow]] representedObject];
+    while ([sel class] != [Binder class]) {
+        sel = [sel binder];
+    }
     return sel;
 }
 
