@@ -127,6 +127,7 @@
                                                     <connections>
                                                         <binding destination="Dx6-QE-ZOo" name="content" keyPath="arrangedObjects" id="4DZ-qy-NOG"/>
                                                         <binding destination="Dx6-QE-ZOo" name="selectionIndexPaths" keyPath="selectionIndexPaths" previousBinding="4DZ-qy-NOG" id="dfH-38-jNO"/>
+                                                        <binding destination="Dx6-QE-ZOo" name="sortDescriptors" keyPath="sortDescriptors" previousBinding="dfH-38-jNO" id="ul0-Sp-bbH"/>
                                                         <outlet property="delegate" destination="-2" id="S4s-CS-Zq8"/>
                                                     </connections>
                                                 </outlineView>
@@ -198,7 +199,7 @@
                     <attributedString key="attributedTitle"/>
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="add:" target="Dx6-QE-ZOo" id="mB7-GG-knC"/>
+                        <action selector="AddBinder:" target="-2" id="EQQ-hV-R8U"/>
                         <binding destination="Dx6-QE-ZOo" name="enabled" keyPath="canAdd" id="pCh-21-oQh"/>
                     </connections>
                 </menuItem>
@@ -239,7 +240,7 @@
             </items>
         </menu>
         <customObject id="-3" userLabel="Application"/>
-        <treeController mode="entity" entityName="Binder" automaticallyPreparesContent="YES" childrenKeyPath="documents" id="Dx6-QE-ZOo" userLabel="Tree Binder">
+        <treeController mode="entity" entityName="Binder" automaticallyPreparesContent="YES" childrenKeyPath="documents" preservesSelection="NO" id="Dx6-QE-ZOo" userLabel="Tree Binder">
             <declaredKeys>
                 <string>name</string>
                 <string>parent.name</string>

@@ -20,6 +20,7 @@
 
 - (IBAction)AddPeople:(id)sender;
 - (IBAction)doubleClickInTableView:(id)sender;
+- (IBAction)AddBinder:(id)sender;
 - (IBAction)AddNote:(id)sender;
 - (IBAction)AddMetting:(id)sender;
 - (IBAction)AddPhoto:(id)sender;

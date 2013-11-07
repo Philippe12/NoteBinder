@@ -97,6 +97,18 @@
     [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
 }
 
+- (IBAction)AddBinder:(id)sender {
+    NSArrayController *ptr = [[NSArrayController alloc] init];
+    [ptr setManagedObjectContext:self.managedObjectContext];
+    [ptr setEntityName:@"Binder"];
+    [ptr prepareContent];
+    
+    Binder *binder = [ptr newObject];
+    binder.name = @"new binder";
+    
+    [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
+}
+
 - (IBAction)AddNote:(id)sender {
     NSArrayController *ptr = [[NSArrayController alloc] init];
     [ptr setManagedObjectContext:self.managedObjectContext];
