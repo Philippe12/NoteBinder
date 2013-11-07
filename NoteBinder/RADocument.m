@@ -11,6 +11,7 @@
 #import "Note.h"
 #import "Meeting.h"
 #import "Photo.h"
+#import "PDF.h"
 #import "RACustomSideBare.h"
 #import "RAPanelController.h"
 #import "RAConfigBinder.h"
@@ -157,6 +158,18 @@
 }
 
 - (IBAction)AddPdf:(id)sender {
+    NSArrayController *ptr = [[NSArrayController alloc] init];
+    [ptr setManagedObjectContext:self.managedObjectContext];
+    [ptr setEntityName:@"PDF"];
+    [ptr prepareContent];
+    
+    Binder *selectbinder = [ self GetBinderSelected];
+    
+    PDF *pdf = [ptr newObject];
+    pdf.name = @"new PDF";
+    [selectbinder addDocumentsObject:pdf];
+    
+    [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
 }
 
 - (void)reloadData {
