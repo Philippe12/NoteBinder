@@ -213,10 +213,10 @@
                                     <action selector="AddNote:" target="-2" id="uPG-0H-0rV"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Metting" id="MkZ-hH-X3R">
+                            <menuItem title="Meeting" id="MkZ-hH-X3R">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="AddMetting:" target="-2" id="fet-5m-dcy"/>
+                                    <action selector="AddMeeting:" target="-2" id="nSr-Nd-t19"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Photo" id="uNL-Az-ndS">

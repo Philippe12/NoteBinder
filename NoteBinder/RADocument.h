@@ -22,7 +22,7 @@
 - (IBAction)doubleClickInTableView:(id)sender;
 - (IBAction)AddBinder:(id)sender;
 - (IBAction)AddNote:(id)sender;
-- (IBAction)AddMetting:(id)sender;
+- (IBAction)AddMeeting:(id)sender;
 - (IBAction)AddPhoto:(id)sender;
 - (IBAction)AddPdf:(id)sender;
 

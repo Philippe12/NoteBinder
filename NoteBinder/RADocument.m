@@ -9,6 +9,7 @@
 #import "RADocument.h"
 #import "People.h"
 #import "Note.h"
+#import "Meeting.h"
 #import "RACustomSideBare.h"
 #import "RAPanelController.h"
 #import "RAConfigBinder.h"
@@ -124,7 +125,19 @@
     [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
 }
 
-- (IBAction)AddMetting:(id)sender {
+- (IBAction)AddMeeting:(id)sender {
+    NSArrayController *ptr = [[NSArrayController alloc] init];
+    [ptr setManagedObjectContext:self.managedObjectContext];
+    [ptr setEntityName:@"Meeting"];
+    [ptr prepareContent];
+    
+    Binder *selectbinder = [ self GetBinderSelected];
+    
+    Meeting *meeting = [ptr newObject];
+    meeting.name = @"new meeting";
+    [selectbinder addDocumentsObject:meeting];
+    
+    [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
 }
 
 - (IBAction)AddPhoto:(id)sender {
