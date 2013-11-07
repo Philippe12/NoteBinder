@@ -7,8 +7,8 @@
 //
 
 #import "RADocument.h"
-#import "Binder.h"
 #import "People.h"
+#import "Note.h"
 #import "RACustomSideBare.h"
 #import "RAPanelController.h"
 #import "RAConfigBinder.h"
@@ -57,6 +57,19 @@
     [_sidebarOutlineView setDoubleAction:@selector(doubleClickInTableView:)];
 }
 
+- (BOOL)outlineView:(NSOutlineView *)outlineView isGroupItem:(id)item {
+    if([outlineView parentForItem:item] == nil)
+        return YES;
+    return NO;
+}
+
+- (NSView *)outlineView:(NSOutlineView *)outlineView viewForTableColumn:(NSTableColumn *)tableColumn item:(id)item  {
+    NSTableCellView *result = [outlineView makeViewWithIdentifier:@"MyCell" owner:self];
+    [result setObjectValue:[item representedObject]];
+    return result;
+}
+
+
 - (IBAction)AddPeople:(id)sender {
     NSArrayController *ptr = [[NSArrayController alloc] init];
     [ptr setManagedObjectContext:self.managedObjectContext];
@@ -84,9 +97,39 @@
     [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
 }
 
+- (IBAction)AddNote:(id)sender {
+    NSArrayController *ptr = [[NSArrayController alloc] init];
+    [ptr setManagedObjectContext:self.managedObjectContext];
+    [ptr setEntityName:@"Note"];
+    [ptr prepareContent];
+    
+    Binder *selectbinder = [ self GetBinderSelected];
+    
+    Note *note = [ptr newObject];
+    note.name = @"new note";
+    [selectbinder addDocumentsObject:note];
+    
+    [self performSelector:@selector(reloadData) withObject:nil afterDelay:0];
+}
+
+- (IBAction)AddMetting:(id)sender {
+}
+
+- (IBAction)AddPhoto:(id)sender {
+}
+
+- (IBAction)AddPdf:(id)sender {
+}
+
 - (void)reloadData {
     [_sidebarOutlineView invalidateIntrinsicContentSize];
     [_sidebarOutlineView reloadData];
+}
+
+- (Binder*)GetBinderSelected
+{
+    id sel = [[_sidebarOutlineView itemAtRow:[_sidebarOutlineView selectedRow]] representedObject];
+    return sel;
 }
 
 @end

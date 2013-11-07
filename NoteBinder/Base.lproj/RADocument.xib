@@ -74,7 +74,7 @@
                                                     <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                     <tableColumns>
-                                                        <tableColumn identifier="" width="240" minWidth="16" maxWidth="1000" id="YXr-wF-J2b">
+                                                        <tableColumn identifier="AutomaticTableColumnIdentifier.0" width="240" minWidth="16" maxWidth="1000" id="YXr-wF-J2b">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -87,38 +87,38 @@
                                                             </textFieldCell>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
-                                                                <tableCellView id="OoX-4d-maP">
+                                                                <tableCellView identifier="MyCell" id="2Ct-nh-qxu">
                                                                     <rect key="frame" x="1" y="0.0" width="240" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
-                                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IU7-IW-TET">
+                                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9D-DQ-E3e">
                                                                             <rect key="frame" x="3" y="0.0" width="17" height="17"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="8Nk-Wp-Xps"/>
+                                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="ooT-KK-1b4"/>
                                                                             <connections>
-                                                                                <binding destination="OoX-4d-maP" name="value" keyPath="objectValue.photo" id="ht7-OQ-GZc">
+                                                                                <binding destination="2Ct-nh-qxu" name="value" keyPath="objectValue.photo" id="AhU-LV-HMQ">
                                                                                     <dictionary key="options">
                                                                                         <string key="NSValueTransformerName">RAImageTranformer</string>
                                                                                     </dictionary>
                                                                                 </binding>
                                                                             </connections>
                                                                         </imageView>
-                                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gvj-dk-xVZ">
+                                                                        <textField identifier="DataCell" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kxO-Wg-1C2">
                                                                             <rect key="frame" x="25" y="0.0" width="215" height="17"/>
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Ofw-TV-GUO">
+                                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Wgh-RT-2u4">
                                                                                 <font key="font" metaFont="system"/>
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <connections>
-                                                                                <binding destination="OoX-4d-maP" name="value" keyPath="objectValue.name" id="f9u-6I-qSY"/>
+                                                                                <binding destination="2Ct-nh-qxu" name="value" keyPath="objectValue.name" id="WNV-of-zlj"/>
                                                                             </connections>
                                                                         </textField>
                                                                     </subviews>
                                                                     <connections>
-                                                                        <outlet property="imageView" destination="IU7-IW-TET" id="4Sn-0n-Wq4"/>
-                                                                        <outlet property="textField" destination="gvj-dk-xVZ" id="KtL-BN-VaB"/>
+                                                                        <outlet property="imageView" destination="n9D-DQ-E3e" id="pzt-82-Hzn"/>
+                                                                        <outlet property="textField" destination="kxO-Wg-1C2" id="pz5-to-62K"/>
                                                                     </connections>
                                                                 </tableCellView>
                                                             </prototypeCellViews>
@@ -127,6 +127,7 @@
                                                     <connections>
                                                         <binding destination="Dx6-QE-ZOo" name="content" keyPath="arrangedObjects" id="4DZ-qy-NOG"/>
                                                         <binding destination="Dx6-QE-ZOo" name="selectionIndexPaths" keyPath="selectionIndexPaths" previousBinding="4DZ-qy-NOG" id="dfH-38-jNO"/>
+                                                        <outlet property="delegate" destination="-2" id="S4s-CS-Zq8"/>
                                                     </connections>
                                                 </outlineView>
                                             </subviews>
@@ -193,9 +194,6 @@
         </window>
         <menu title="New" showsStateColumn="NO" autoenablesItems="NO" id="03V-Ti-XIy">
             <items>
-                <menuItem title="Document" id="UI2-Mb-uqG">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
                 <menuItem title="Binder" id="fpk-Iu-fCE">
                     <attributedString key="attributedTitle"/>
                     <modifierMask key="keyEquivalentModifierMask"/>
@@ -204,11 +202,38 @@
                         <binding destination="Dx6-QE-ZOo" name="enabled" keyPath="canAdd" id="pCh-21-oQh"/>
                     </connections>
                 </menuItem>
-                <menuItem title="People" id="8yx-oN-rhj">
-                    <attributedString key="attributedTitle"/>
+                <menuItem title="Document" id="ElF-Xz-Puw">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Document" showsStateColumn="NO" autoenablesItems="NO" id="aYb-jC-bnD">
+                        <items>
+                            <menuItem title="Note" id="SBt-x8-BMw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="AddNote:" target="-2" id="uPG-0H-0rV"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Metting" id="MkZ-hH-X3R">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="AddMetting:" target="-2" id="fet-5m-dcy"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Photo" id="uNL-Az-ndS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="AddPhoto:" target="-2" id="1Yc-B7-SMB"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Pdf" id="6vE-rY-2lj">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="AddPdf:" target="-2" id="VKx-SV-D0n"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
-                        <action selector="AddPeople:" target="-2" id="hJg-cd-jb5"/>
+                        <binding destination="Dx6-QE-ZOo" name="enabled" keyPath="canRemove" id="JFR-RF-ySv"/>
                     </connections>
                 </menuItem>
             </items>

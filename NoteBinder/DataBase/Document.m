@@ -17,4 +17,9 @@
 @dynamic photo;
 @dynamic binder;
 
+- (id) documents
+{
+    return nil;
+}
+
 @end

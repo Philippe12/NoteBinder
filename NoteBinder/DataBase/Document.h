@@ -18,4 +18,6 @@
 @property (nonatomic, retain) NSData * photo;
 @property (nonatomic, retain) Binder *binder;
 
+- (id) documents;
+
 @end
