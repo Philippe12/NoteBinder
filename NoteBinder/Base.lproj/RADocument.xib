@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="RADocument">
             <connections>
+                <outlet property="_mainContentView" destination="VWg-BS-5p3" id="exC-hg-42f"/>
                 <outlet property="sidebarOutlineView" destination="45h-Fd-PKU" id="ehE-t6-kmV"/>
                 <outlet property="window" destination="5" id="gQp-lW-n6O"/>
             </connections>
@@ -160,20 +161,6 @@
                             <customView fixedFrame="YES" id="VWg-BS-5p3">
                                 <rect key="frame" x="286" y="0.0" width="544" height="586"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <subviews>
-                                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ai9-gg-BEA">
-                                        <rect key="frame" x="20" y="544" width="199" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="GAk-os-hoD">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                        <connections>
-                                            <binding destination="Dx6-QE-ZOo" name="value" keyPath="selection.name" id="mTg-1b-pUr"/>
-                                        </connections>
-                                    </textField>
-                                </subviews>
                             </customView>
                         </subviews>
                         <holdingPriorities>

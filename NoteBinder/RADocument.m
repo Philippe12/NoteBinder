@@ -15,6 +15,7 @@
 #import "RACustomSideBare.h"
 #import "RAPanelController.h"
 #import "RAConfigBinder.h"
+#import "RAViewBinder.h"
 
 @implementation RADocument
 
@@ -72,6 +73,32 @@
     return result;
 }
 
+- (void)_setContentViewToName:(id)item {
+    if (_currentContentViewController) {
+        [[_currentContentViewController view] removeFromSuperview];
+    }
+
+    NSString *str = [NSString stringWithFormat: @"RAView%@", [item className], nil];
+
+    id ptr = [[NSClassFromString(str) alloc]init]; // Retained
+    if (ptr == nil) {
+        return;
+    }
+    [ptr setPresistent:item];
+    _currentContentViewController = ptr;
+
+    NSView *view = [_currentContentViewController view];
+    view.frame = _mainContentView.bounds;
+    [view setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+    [_mainContentView addSubview:view];
+}
+
+- (void)outlineViewSelectionDidChange:(NSNotification *)notification {
+    if ([_sidebarOutlineView selectedRow] != -1) {
+        id item = [[_sidebarOutlineView itemAtRow:[_sidebarOutlineView selectedRow]] representedObject];
+        [self _setContentViewToName:item];
+    }
+}
 
 - (IBAction)AddPeople:(id)sender {
     NSArrayController *ptr = [[NSArrayController alloc] init];

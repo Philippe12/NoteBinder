@@ -12,11 +12,13 @@
 @interface RADocument : NSPersistentDocument <NSOutlineViewDelegate> {
 @private
     NSArrayController *parentArrayBinder;
+    NSViewController *_currentContentViewController;
 }
 
 - (Binder*)GetBinderSelected;
 
 @property (strong) IBOutlet NSOutlineView *sidebarOutlineView;
+@property (strong) IBOutlet NSView *mainContentView;
 
 - (IBAction)AddPeople:(id)sender;
 - (IBAction)doubleClickInTableView:(id)sender;
