@@ -54,6 +54,8 @@
 		2687751718226118002CDFA2 /* RAConfigPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 2687751518226118002CDFA2 /* RAConfigPeople.m */; };
 		2687751818226118002CDFA2 /* RAConfigPeople.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2687751618226118002CDFA2 /* RAConfigPeople.xib */; };
 		2687751A1822651F002CDFA2 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268775191822651F002CDFA2 /* AddressBook.framework */; };
+		26D6ABFC184600DC00804CEC /* RAConfigPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D6ABFA184600DC00804CEC /* RAConfigPhoto.m */; };
+		26D6ABFD184600DC00804CEC /* RAConfigPhoto.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26D6ABFB184600DC00804CEC /* RAConfigPhoto.xib */; };
 		26D9CB041817D9020056DE02 /* RAButtonPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9CB031817D9020056DE02 /* RAButtonPopMenu.m */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +144,9 @@
 		2687751518226118002CDFA2 /* RAConfigPeople.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAConfigPeople.m; path = Panel/RAConfigPeople.m; sourceTree = "<group>"; };
 		2687751618226118002CDFA2 /* RAConfigPeople.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAConfigPeople.xib; path = Panel/RAConfigPeople.xib; sourceTree = "<group>"; };
 		268775191822651F002CDFA2 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		26D6ABF9184600DC00804CEC /* RAConfigPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAConfigPhoto.h; path = Panel/RAConfigPhoto.h; sourceTree = "<group>"; };
+		26D6ABFA184600DC00804CEC /* RAConfigPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAConfigPhoto.m; path = Panel/RAConfigPhoto.m; sourceTree = "<group>"; };
+		26D6ABFB184600DC00804CEC /* RAConfigPhoto.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAConfigPhoto.xib; path = Panel/RAConfigPhoto.xib; sourceTree = "<group>"; };
 		26D9CB021817D9020056DE02 /* RAButtonPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAButtonPopMenu.h; path = CustomClass/RAButtonPopMenu.h; sourceTree = "<group>"; };
 		26D9CB031817D9020056DE02 /* RAButtonPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAButtonPopMenu.m; path = CustomClass/RAButtonPopMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -300,6 +305,9 @@
 				2644C7F5182BAEB800C269EB /* RAConfigNote.h */,
 				2644C7F6182BAEB800C269EB /* RAConfigNote.m */,
 				2644C7F7182BAEB800C269EB /* RAConfigNote.xib */,
+				26D6ABF9184600DC00804CEC /* RAConfigPhoto.h */,
+				26D6ABFA184600DC00804CEC /* RAConfigPhoto.m */,
+				26D6ABFB184600DC00804CEC /* RAConfigPhoto.xib */,
 			);
 			name = Panel;
 			sourceTree = "<group>";
@@ -428,6 +436,7 @@
 				26624D46180FBD9D008E5F73 /* RADocument.xib in Resources */,
 				2687751818226118002CDFA2 /* RAConfigPeople.xib in Resources */,
 				266A3C49181EA511008816E2 /* RAConfigBinder.xib in Resources */,
+				26D6ABFD184600DC00804CEC /* RAConfigPhoto.xib in Resources */,
 				26624D4E180FBD9D008E5F73 /* Images.xcassets in Resources */,
 				26624D6F180FC9F7008E5F73 /* Binder16.png in Resources */,
 				26624D7D180FCD62008E5F73 /* Binder1024.png in Resources */,
@@ -465,6 +474,7 @@
 				266A3C43181EA477008816E2 /* RAPanelController.m in Sources */,
 				2662B6151820179900BEDD62 /* RAImageTranformer.m in Sources */,
 				267D61E918321B5A00522F73 /* RAStateButtonTranformer.m in Sources */,
+				26D6ABFC184600DC00804CEC /* RAConfigPhoto.m in Sources */,
 				2654BF06182E6C4000B0CFE5 /* Editing.m in Sources */,
 				2644C7F1182B7F8500C269EB /* People.m in Sources */,
 				2644C7F8182BAEB800C269EB /* RAConfigNote.m in Sources */,
