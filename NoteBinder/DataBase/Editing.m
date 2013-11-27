@@ -1,18 +1,16 @@
 //
-//  Note.m
+//  Editing.m
 //  NoteBinder
 //
 //  Created by Philippe Fouquet on 09/11/2013.
 //  Copyright (c) 2013 Philippe Fouquet. All rights reserved.
 //
 
-#import "Note.h"
-#import "Media.h"
+#import "Editing.h"
 
 
-@implementation Note
+@implementation Editing
 
-@dynamic texte;
-@dynamic medias;
+@dynamic lock;
 
 @end
