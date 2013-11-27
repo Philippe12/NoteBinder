@@ -14,9 +14,16 @@
 		2644C7EB182B7F8500C269EB /* Binder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644C7EA182B7F8500C269EB /* Binder.m */; };
 		2644C7EE182B7F8500C269EB /* PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644C7ED182B7F8500C269EB /* PDF.m */; };
 		2644C7F1182B7F8500C269EB /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644C7F0182B7F8500C269EB /* People.m */; };
-		2644C7F4182B7F8500C269EB /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644C7F3182B7F8500C269EB /* Note.m */; };
 		2644C7F8182BAEB800C269EB /* RAConfigNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644C7F6182BAEB800C269EB /* RAConfigNote.m */; };
 		2644C7F9182BAEB800C269EB /* RAConfigNote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2644C7F7182BAEB800C269EB /* RAConfigNote.xib */; };
+		2644C7FE182BD64400C269EB /* RAViewBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644C7FC182BD64400C269EB /* RAViewBinder.m */; };
+		2644C7FF182BD64400C269EB /* RAViewBinder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2644C7FD182BD64400C269EB /* RAViewBinder.xib */; };
+		2644C801182BDA2C00C269EB /* notebook_paper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2644C800182BDA2C00C269EB /* notebook_paper.jpg */; };
+		2644C80A182CF5F000C269EB /* RAViewNoteBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644C809182CF5F000C269EB /* RAViewNoteBook.m */; };
+		2654BEFF182E44A800B0CFE5 /* RAViewNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 2654BEFD182E44A800B0CFE5 /* RAViewNote.m */; };
+		2654BF00182E44A800B0CFE5 /* RAViewNote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2654BEFE182E44A800B0CFE5 /* RAViewNote.xib */; };
+		2654BF06182E6C4000B0CFE5 /* Editing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2654BF05182E6C4000B0CFE5 /* Editing.m */; };
+		2654BF09182E6DD800B0CFE5 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 2654BF08182E6DD800B0CFE5 /* Note.m */; };
 		26624D30180FBD9D008E5F73 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26624D2F180FBD9D008E5F73 /* Cocoa.framework */; };
 		26624D3A180FBD9D008E5F73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26624D38180FBD9D008E5F73 /* InfoPlist.strings */; };
 		26624D3C180FBD9D008E5F73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26624D3B180FBD9D008E5F73 /* main.m */; };
@@ -43,6 +50,7 @@
 		266A3C44181EA477008816E2 /* RAPanelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266A3C42181EA477008816E2 /* RAPanelController.xib */; };
 		266A3C48181EA511008816E2 /* RAConfigBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 266A3C46181EA511008816E2 /* RAConfigBinder.m */; };
 		266A3C49181EA511008816E2 /* RAConfigBinder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266A3C47181EA511008816E2 /* RAConfigBinder.xib */; };
+		267D61E918321B5A00522F73 /* RAStateButtonTranformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D61E818321B5A00522F73 /* RAStateButtonTranformer.m */; };
 		2687751718226118002CDFA2 /* RAConfigPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 2687751518226118002CDFA2 /* RAConfigPeople.m */; };
 		2687751818226118002CDFA2 /* RAConfigPeople.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2687751618226118002CDFA2 /* RAConfigPeople.xib */; };
 		2687751A1822651F002CDFA2 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268775191822651F002CDFA2 /* AddressBook.framework */; };
@@ -74,11 +82,22 @@
 		2644C7ED182B7F8500C269EB /* PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDF.m; path = DataBase/PDF.m; sourceTree = "<group>"; };
 		2644C7EF182B7F8500C269EB /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = People.h; path = DataBase/People.h; sourceTree = "<group>"; };
 		2644C7F0182B7F8500C269EB /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = People.m; path = DataBase/People.m; sourceTree = "<group>"; };
-		2644C7F2182B7F8500C269EB /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = DataBase/Note.h; sourceTree = "<group>"; };
-		2644C7F3182B7F8500C269EB /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = DataBase/Note.m; sourceTree = "<group>"; };
 		2644C7F5182BAEB800C269EB /* RAConfigNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAConfigNote.h; path = Panel/RAConfigNote.h; sourceTree = "<group>"; };
 		2644C7F6182BAEB800C269EB /* RAConfigNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAConfigNote.m; path = Panel/RAConfigNote.m; sourceTree = "<group>"; };
 		2644C7F7182BAEB800C269EB /* RAConfigNote.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAConfigNote.xib; path = Panel/RAConfigNote.xib; sourceTree = "<group>"; };
+		2644C7FB182BD64400C269EB /* RAViewBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAViewBinder.h; path = View/RAViewBinder.h; sourceTree = "<group>"; };
+		2644C7FC182BD64400C269EB /* RAViewBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAViewBinder.m; path = View/RAViewBinder.m; sourceTree = "<group>"; };
+		2644C7FD182BD64400C269EB /* RAViewBinder.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAViewBinder.xib; path = View/RAViewBinder.xib; sourceTree = "<group>"; };
+		2644C800182BDA2C00C269EB /* notebook_paper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = notebook_paper.jpg; path = NoteBinder/resources/notebook_paper.jpg; sourceTree = "<group>"; };
+		2644C808182CF5F000C269EB /* RAViewNoteBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAViewNoteBook.h; path = CustomClass/RAViewNoteBook.h; sourceTree = "<group>"; };
+		2644C809182CF5F000C269EB /* RAViewNoteBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAViewNoteBook.m; path = CustomClass/RAViewNoteBook.m; sourceTree = "<group>"; };
+		2654BEFC182E44A800B0CFE5 /* RAViewNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAViewNote.h; path = View/RAViewNote.h; sourceTree = "<group>"; };
+		2654BEFD182E44A800B0CFE5 /* RAViewNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAViewNote.m; path = View/RAViewNote.m; sourceTree = "<group>"; };
+		2654BEFE182E44A800B0CFE5 /* RAViewNote.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAViewNote.xib; path = View/RAViewNote.xib; sourceTree = "<group>"; };
+		2654BF04182E6C4000B0CFE5 /* Editing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Editing.h; path = DataBase/Editing.h; sourceTree = "<group>"; };
+		2654BF05182E6C4000B0CFE5 /* Editing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Editing.m; path = DataBase/Editing.m; sourceTree = "<group>"; };
+		2654BF07182E6DD800B0CFE5 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = DataBase/Note.h; sourceTree = "<group>"; };
+		2654BF08182E6DD800B0CFE5 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = DataBase/Note.m; sourceTree = "<group>"; };
 		26624D2C180FBD9D008E5F73 /* NoteBinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteBinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26624D2F180FBD9D008E5F73 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		26624D32180FBD9D008E5F73 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -117,6 +136,8 @@
 		266A3C45181EA511008816E2 /* RAConfigBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAConfigBinder.h; path = Panel/RAConfigBinder.h; sourceTree = "<group>"; };
 		266A3C46181EA511008816E2 /* RAConfigBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAConfigBinder.m; path = Panel/RAConfigBinder.m; sourceTree = "<group>"; };
 		266A3C47181EA511008816E2 /* RAConfigBinder.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAConfigBinder.xib; path = Panel/RAConfigBinder.xib; sourceTree = "<group>"; };
+		267D61E718321B5A00522F73 /* RAStateButtonTranformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAStateButtonTranformer.h; path = DataBase/RAStateButtonTranformer.h; sourceTree = "<group>"; };
+		267D61E818321B5A00522F73 /* RAStateButtonTranformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAStateButtonTranformer.m; path = DataBase/RAStateButtonTranformer.m; sourceTree = "<group>"; };
 		2687751418226118002CDFA2 /* RAConfigPeople.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAConfigPeople.h; path = Panel/RAConfigPeople.h; sourceTree = "<group>"; };
 		2687751518226118002CDFA2 /* RAConfigPeople.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAConfigPeople.m; path = Panel/RAConfigPeople.m; sourceTree = "<group>"; };
 		2687751618226118002CDFA2 /* RAConfigPeople.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAConfigPeople.xib; path = Panel/RAConfigPeople.xib; sourceTree = "<group>"; };
@@ -147,6 +168,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2644C7FA182BD5E800C269EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2644C7FB182BD64400C269EB /* RAViewBinder.h */,
+				2644C7FC182BD64400C269EB /* RAViewBinder.m */,
+				2644C7FD182BD64400C269EB /* RAViewBinder.xib */,
+				2654BEFC182E44A800B0CFE5 /* RAViewNote.h */,
+				2654BEFD182E44A800B0CFE5 /* RAViewNote.m */,
+				2654BEFE182E44A800B0CFE5 /* RAViewNote.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		26624D23180FBD9D008E5F73 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +225,7 @@
 		26624D35180FBD9D008E5F73 /* NoteBinder */ = {
 			isa = PBXGroup;
 			children = (
+				2644C7FA182BD5E800C269EB /* View */,
 				266A3C3F181EA457008816E2 /* Panel */,
 				26D9CB011817D8B30056DE02 /* CustomClass */,
 				266EB95B181660BF005AEEED /* DataBase */,
@@ -238,6 +273,7 @@
 		26624D69180FC123008E5F73 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2644C800182BDA2C00C269EB /* notebook_paper.jpg */,
 				26624D7C180FCD62008E5F73 /* Binder1024.png */,
 				26624D78180FCC82008E5F73 /* Binder64.png */,
 				26624D70180FCB98008E5F73 /* Binder32.png */,
@@ -271,8 +307,10 @@
 		266EB95B181660BF005AEEED /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
-				2644C7F2182B7F8500C269EB /* Note.h */,
-				2644C7F3182B7F8500C269EB /* Note.m */,
+				2654BF07182E6DD800B0CFE5 /* Note.h */,
+				2654BF08182E6DD800B0CFE5 /* Note.m */,
+				2654BF04182E6C4000B0CFE5 /* Editing.h */,
+				2654BF05182E6C4000B0CFE5 /* Editing.m */,
 				2644C7EF182B7F8500C269EB /* People.h */,
 				2644C7F0182B7F8500C269EB /* People.m */,
 				2644C7EC182B7F8500C269EB /* PDF.h */,
@@ -289,6 +327,8 @@
 				2644C7DE182B7F8500C269EB /* Meeting.m */,
 				2662B6131820179900BEDD62 /* RAImageTranformer.h */,
 				2662B6141820179900BEDD62 /* RAImageTranformer.m */,
+				267D61E718321B5A00522F73 /* RAStateButtonTranformer.h */,
+				267D61E818321B5A00522F73 /* RAStateButtonTranformer.m */,
 			);
 			name = DataBase;
 			sourceTree = "<group>";
@@ -300,6 +340,8 @@
 				2664E586181D0BD600412048 /* RACustomSideBare.m */,
 				26D9CB021817D9020056DE02 /* RAButtonPopMenu.h */,
 				26D9CB031817D9020056DE02 /* RAButtonPopMenu.m */,
+				2644C808182CF5F000C269EB /* RAViewNoteBook.h */,
+				2644C809182CF5F000C269EB /* RAViewNoteBook.m */,
 			);
 			name = CustomClass;
 			sourceTree = "<group>";
@@ -396,6 +438,9 @@
 				26624D49180FBD9D008E5F73 /* MainMenu.xib in Resources */,
 				26624D7A180FCC82008E5F73 /* Binder64.png in Resources */,
 				266A3C44181EA477008816E2 /* RAPanelController.xib in Resources */,
+				2644C801182BDA2C00C269EB /* notebook_paper.jpg in Resources */,
+				2644C7FF182BD64400C269EB /* RAViewBinder.xib in Resources */,
+				2654BF00182E44A800B0CFE5 /* RAViewNote.xib in Resources */,
 				26624D75180FCB98008E5F73 /* Binder128.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,23 +461,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				2687751718226118002CDFA2 /* RAConfigPeople.m in Sources */,
-				2644C7F4182B7F8500C269EB /* Note.m in Sources */,
 				26624D3C180FBD9D008E5F73 /* main.m in Sources */,
 				266A3C43181EA477008816E2 /* RAPanelController.m in Sources */,
 				2662B6151820179900BEDD62 /* RAImageTranformer.m in Sources */,
+				267D61E918321B5A00522F73 /* RAStateButtonTranformer.m in Sources */,
+				2654BF06182E6C4000B0CFE5 /* Editing.m in Sources */,
 				2644C7F1182B7F8500C269EB /* People.m in Sources */,
 				2644C7F8182BAEB800C269EB /* RAConfigNote.m in Sources */,
 				2644C7E2182B7F8500C269EB /* Document.m in Sources */,
 				2664E587181D0BD600412048 /* RACustomSideBare.m in Sources */,
 				2644C7E8182B7F8500C269EB /* Photo.m in Sources */,
+				2644C80A182CF5F000C269EB /* RAViewNoteBook.m in Sources */,
 				26D9CB041817D9020056DE02 /* RAButtonPopMenu.m in Sources */,
+				2644C7FE182BD64400C269EB /* RAViewBinder.m in Sources */,
 				2644C7EE182B7F8500C269EB /* PDF.m in Sources */,
 				2644C7DF182B7F8500C269EB /* Meeting.m in Sources */,
 				2644C7EB182B7F8500C269EB /* Binder.m in Sources */,
+				2654BEFF182E44A800B0CFE5 /* RAViewNote.m in Sources */,
 				26624D43180FBD9D008E5F73 /* RADocument.m in Sources */,
 				26624D4C180FBD9D008E5F73 /* RADocument.xcdatamodeld in Sources */,
 				2644C7E5182B7F8500C269EB /* Media.m in Sources */,
 				266A3C48181EA511008816E2 /* RAConfigBinder.m in Sources */,
+				2654BF09182E6DD800B0CFE5 /* Note.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
