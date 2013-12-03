@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <plugIn identifier="com.apple.pdfkit.ibplugin" version="3338"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RAConfigPDF">
+            <connections>
+                <outlet property="viewPDF" destination="EK1-52-WKX" id="bLV-9X-1BM"/>
+                <outlet property="window" destination="1" id="3"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" wantsToBeColor="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="420" height="336"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="336"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ii0-tU-SND">
+                        <rect key="frame" x="18" y="297" width="49" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name :" id="QZF-iR-QYA">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dwk-ah-5sb">
+                        <rect key="frame" x="73" y="294" width="277" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="4UE-rO-8MC">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="self.mPDF.name" id="9vZ-Ey-Hen"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cRI-re-J2Y">
+                        <rect key="frame" x="14" y="14" width="392" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0rO-i4-c5Z">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="Quite:" target="-2" id="14L-ZC-Cip"/>
+                        </connections>
+                    </button>
+                    <pdfView autoresizesSubviews="NO" wantsLayer="YES" scaleFactor="0.29435483870967744" autoScales="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EK1-52-WKX">
+                        <rect key="frame" x="20" y="50" width="380" height="236"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </pdfView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jlm-hA-Qmx">
+                        <rect key="frame" x="358" y="293" width="42" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="gbz-ST-hlW"/>
+                        </constraints>
+                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSFolder" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CIu-Vz-B0L">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="OpenImage:" target="-2" id="97x-uM-aid"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dwk-ah-5sb" firstAttribute="leading" secondItem="Ii0-tU-SND" secondAttribute="trailing" constant="8" symbolic="YES" id="21H-pg-juW"/>
+                    <constraint firstItem="dwk-ah-5sb" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" symbolic="YES" id="BnP-Tq-bAe"/>
+                    <constraint firstItem="dwk-ah-5sb" firstAttribute="centerY" secondItem="Ii0-tU-SND" secondAttribute="centerY" id="IYv-BB-am4"/>
+                    <constraint firstItem="EK1-52-WKX" firstAttribute="top" secondItem="Ii0-tU-SND" secondAttribute="bottom" constant="11" id="Kfi-kQ-Zek"/>
+                    <constraint firstItem="cRI-re-J2Y" firstAttribute="top" secondItem="EK1-52-WKX" secondAttribute="bottom" constant="8" id="Lhi-Jk-XEl"/>
+                    <constraint firstItem="EK1-52-WKX" firstAttribute="leading" secondItem="cRI-re-J2Y" secondAttribute="leading" id="QFE-iF-ZQ6"/>
+                    <constraint firstItem="EK1-52-WKX" firstAttribute="trailing" secondItem="cRI-re-J2Y" secondAttribute="trailing" id="SAG-M4-RXT"/>
+                    <constraint firstItem="EK1-52-WKX" firstAttribute="centerY" secondItem="2" secondAttribute="centerY" id="ZEG-VU-eS8"/>
+                    <constraint firstItem="EK1-52-WKX" firstAttribute="top" secondItem="jlm-hA-Qmx" secondAttribute="bottom" constant="8" symbolic="YES" id="gv2-rh-hOq"/>
+                    <constraint firstItem="EK1-52-WKX" firstAttribute="trailing" secondItem="jlm-hA-Qmx" secondAttribute="trailing" id="h2Z-dg-psD"/>
+                    <constraint firstAttribute="trailing" secondItem="jlm-hA-Qmx" secondAttribute="trailing" constant="20" symbolic="YES" id="mj8-EZ-mLv"/>
+                    <constraint firstItem="jlm-hA-Qmx" firstAttribute="leading" secondItem="dwk-ah-5sb" secondAttribute="trailing" constant="8" symbolic="YES" id="mxG-8w-58U"/>
+                    <constraint firstItem="Ii0-tU-SND" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="qIJ-4t-d8L"/>
+                    <constraint firstItem="Ii0-tU-SND" firstAttribute="leading" secondItem="EK1-52-WKX" secondAttribute="leading" id="r8U-VX-mN9"/>
+                    <constraint firstItem="dwk-ah-5sb" firstAttribute="top" secondItem="jlm-hA-Qmx" secondAttribute="top" id="w2c-NQ-LoJ"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="4"/>
+            </connections>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="hdl-S3-09M"/>
+    </objects>
+    <resources>
+        <image name="NSFolder" width="32" height="32"/>
+    </resources>
+</document>

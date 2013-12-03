@@ -54,6 +54,9 @@
 		2687751718226118002CDFA2 /* RAConfigPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 2687751518226118002CDFA2 /* RAConfigPeople.m */; };
 		2687751818226118002CDFA2 /* RAConfigPeople.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2687751618226118002CDFA2 /* RAConfigPeople.xib */; };
 		2687751A1822651F002CDFA2 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268775191822651F002CDFA2 /* AddressBook.framework */; };
+		2689E0F6184E080000755173 /* RAConfigPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689E0F4184E080000755173 /* RAConfigPDF.m */; };
+		2689E0F7184E080000755173 /* RAConfigPDF.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2689E0F5184E080000755173 /* RAConfigPDF.xib */; };
+		2689E0F9184E230E00755173 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2689E0F8184E230E00755173 /* Quartz.framework */; };
 		26D6ABFC184600DC00804CEC /* RAConfigPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D6ABFA184600DC00804CEC /* RAConfigPhoto.m */; };
 		26D6ABFD184600DC00804CEC /* RAConfigPhoto.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26D6ABFB184600DC00804CEC /* RAConfigPhoto.xib */; };
 		26D6AC01184640CA00804CEC /* RAViewPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D6ABFF184640CA00804CEC /* RAViewPhoto.m */; };
@@ -146,6 +149,10 @@
 		2687751518226118002CDFA2 /* RAConfigPeople.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAConfigPeople.m; path = Panel/RAConfigPeople.m; sourceTree = "<group>"; };
 		2687751618226118002CDFA2 /* RAConfigPeople.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAConfigPeople.xib; path = Panel/RAConfigPeople.xib; sourceTree = "<group>"; };
 		268775191822651F002CDFA2 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		2689E0F3184E080000755173 /* RAConfigPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAConfigPDF.h; path = Panel/RAConfigPDF.h; sourceTree = "<group>"; };
+		2689E0F4184E080000755173 /* RAConfigPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAConfigPDF.m; path = Panel/RAConfigPDF.m; sourceTree = "<group>"; };
+		2689E0F5184E080000755173 /* RAConfigPDF.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAConfigPDF.xib; path = Panel/RAConfigPDF.xib; sourceTree = "<group>"; };
+		2689E0F8184E230E00755173 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		26D6ABF9184600DC00804CEC /* RAConfigPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAConfigPhoto.h; path = Panel/RAConfigPhoto.h; sourceTree = "<group>"; };
 		26D6ABFA184600DC00804CEC /* RAConfigPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAConfigPhoto.m; path = Panel/RAConfigPhoto.m; sourceTree = "<group>"; };
 		26D6ABFB184600DC00804CEC /* RAConfigPhoto.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAConfigPhoto.xib; path = Panel/RAConfigPhoto.xib; sourceTree = "<group>"; };
@@ -161,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2689E0F9184E230E00755173 /* Quartz.framework in Frameworks */,
 				2687751A1822651F002CDFA2 /* AddressBook.framework in Frameworks */,
 				26624D30180FBD9D008E5F73 /* Cocoa.framework in Frameworks */,
 			);
@@ -217,6 +225,7 @@
 		26624D2E180FBD9D008E5F73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2689E0F8184E230E00755173 /* Quartz.framework */,
 				268775191822651F002CDFA2 /* AddressBook.framework */,
 				26624D2F180FBD9D008E5F73 /* Cocoa.framework */,
 				26624D54180FBD9D008E5F73 /* XCTest.framework */,
@@ -316,6 +325,9 @@
 				26D6ABF9184600DC00804CEC /* RAConfigPhoto.h */,
 				26D6ABFA184600DC00804CEC /* RAConfigPhoto.m */,
 				26D6ABFB184600DC00804CEC /* RAConfigPhoto.xib */,
+				2689E0F3184E080000755173 /* RAConfigPDF.h */,
+				2689E0F4184E080000755173 /* RAConfigPDF.m */,
+				2689E0F5184E080000755173 /* RAConfigPDF.xib */,
 			);
 			name = Panel;
 			sourceTree = "<group>";
@@ -454,6 +466,7 @@
 				26624D40180FBD9D008E5F73 /* Credits.rtf in Resources */,
 				26624D49180FBD9D008E5F73 /* MainMenu.xib in Resources */,
 				26624D7A180FCC82008E5F73 /* Binder64.png in Resources */,
+				2689E0F7184E080000755173 /* RAConfigPDF.xib in Resources */,
 				266A3C44181EA477008816E2 /* RAPanelController.xib in Resources */,
 				26D6AC02184640CA00804CEC /* RAViewPhoto.xib in Resources */,
 				2644C801182BDA2C00C269EB /* notebook_paper.jpg in Resources */,
@@ -481,6 +494,7 @@
 				2687751718226118002CDFA2 /* RAConfigPeople.m in Sources */,
 				26624D3C180FBD9D008E5F73 /* main.m in Sources */,
 				266A3C43181EA477008816E2 /* RAPanelController.m in Sources */,
+				2689E0F6184E080000755173 /* RAConfigPDF.m in Sources */,
 				2662B6151820179900BEDD62 /* RAImageTranformer.m in Sources */,
 				267D61E918321B5A00522F73 /* RAStateButtonTranformer.m in Sources */,
 				26D6ABFC184600DC00804CEC /* RAConfigPhoto.m in Sources */,
