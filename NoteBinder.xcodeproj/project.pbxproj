@@ -56,6 +56,8 @@
 		2687751A1822651F002CDFA2 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268775191822651F002CDFA2 /* AddressBook.framework */; };
 		26D6ABFC184600DC00804CEC /* RAConfigPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D6ABFA184600DC00804CEC /* RAConfigPhoto.m */; };
 		26D6ABFD184600DC00804CEC /* RAConfigPhoto.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26D6ABFB184600DC00804CEC /* RAConfigPhoto.xib */; };
+		26D6AC01184640CA00804CEC /* RAViewPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D6ABFF184640CA00804CEC /* RAViewPhoto.m */; };
+		26D6AC02184640CA00804CEC /* RAViewPhoto.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26D6AC00184640CA00804CEC /* RAViewPhoto.xib */; };
 		26D9CB041817D9020056DE02 /* RAButtonPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9CB031817D9020056DE02 /* RAButtonPopMenu.m */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +149,9 @@
 		26D6ABF9184600DC00804CEC /* RAConfigPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAConfigPhoto.h; path = Panel/RAConfigPhoto.h; sourceTree = "<group>"; };
 		26D6ABFA184600DC00804CEC /* RAConfigPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAConfigPhoto.m; path = Panel/RAConfigPhoto.m; sourceTree = "<group>"; };
 		26D6ABFB184600DC00804CEC /* RAConfigPhoto.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAConfigPhoto.xib; path = Panel/RAConfigPhoto.xib; sourceTree = "<group>"; };
+		26D6ABFE184640CA00804CEC /* RAViewPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAViewPhoto.h; path = View/RAViewPhoto.h; sourceTree = "<group>"; };
+		26D6ABFF184640CA00804CEC /* RAViewPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAViewPhoto.m; path = View/RAViewPhoto.m; sourceTree = "<group>"; };
+		26D6AC00184640CA00804CEC /* RAViewPhoto.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RAViewPhoto.xib; path = View/RAViewPhoto.xib; sourceTree = "<group>"; };
 		26D9CB021817D9020056DE02 /* RAButtonPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAButtonPopMenu.h; path = CustomClass/RAButtonPopMenu.h; sourceTree = "<group>"; };
 		26D9CB031817D9020056DE02 /* RAButtonPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAButtonPopMenu.m; path = CustomClass/RAButtonPopMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +187,9 @@
 				2654BEFC182E44A800B0CFE5 /* RAViewNote.h */,
 				2654BEFD182E44A800B0CFE5 /* RAViewNote.m */,
 				2654BEFE182E44A800B0CFE5 /* RAViewNote.xib */,
+				26D6ABFE184640CA00804CEC /* RAViewPhoto.h */,
+				26D6ABFF184640CA00804CEC /* RAViewPhoto.m */,
+				26D6AC00184640CA00804CEC /* RAViewPhoto.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -447,6 +455,7 @@
 				26624D49180FBD9D008E5F73 /* MainMenu.xib in Resources */,
 				26624D7A180FCC82008E5F73 /* Binder64.png in Resources */,
 				266A3C44181EA477008816E2 /* RAPanelController.xib in Resources */,
+				26D6AC02184640CA00804CEC /* RAViewPhoto.xib in Resources */,
 				2644C801182BDA2C00C269EB /* notebook_paper.jpg in Resources */,
 				2644C7FF182BD64400C269EB /* RAViewBinder.xib in Resources */,
 				2654BF00182E44A800B0CFE5 /* RAViewNote.xib in Resources */,
@@ -482,6 +491,7 @@
 				2664E587181D0BD600412048 /* RACustomSideBare.m in Sources */,
 				2644C7E8182B7F8500C269EB /* Photo.m in Sources */,
 				2644C80A182CF5F000C269EB /* RAViewNoteBook.m in Sources */,
+				26D6AC01184640CA00804CEC /* RAViewPhoto.m in Sources */,
 				26D9CB041817D9020056DE02 /* RAButtonPopMenu.m in Sources */,
 				2644C7FE182BD64400C269EB /* RAViewBinder.m in Sources */,
 				2644C7EE182B7F8500C269EB /* PDF.m in Sources */,
